@@ -7,6 +7,7 @@ import { Modal } from "./Modal";
 import { ProductsShow } from "./ProductsShow";
 import { Signup } from "./Signup";
 import { Login } from "./Login";
+import { LogoutLink } from "./LogoutLink";
 
 
 export function Content() {
@@ -75,6 +76,7 @@ export function Content() {
     return (
         <div>
             <Login/>
+            <LogoutLink/>
             <Signup />
             <ProductsNew onCreateProduct={handleCreateProduct}/>
             <ProductsIndex products={products} onShowProduct={handleShowProduct} />
